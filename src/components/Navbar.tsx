@@ -1,34 +1,23 @@
-import Image from "next/image";
-import pfp from "@/assets/pfp.jpg";
+import Link from "next/link";
+import { BsFillHexagonFill } from "react-icons/bs";
 
 const Navbar = () => {
   return (
     <>
-      <nav className="flex flex-row justify-between p-4 w-full h-20 bg-slate-700  sticky z-10">
-        <div className="flex flex-row gap-3 mx-5">
-          <div className="">
-            <Image
-              src={pfp}
-              alt="pfp"
-              className="rounded-full w-12 h-12 hover:w-20 hover:h-20 cursor-pointer transition-all "
-            />
+      <nav className="flex justify-between">
+        <div className="mx-2">
+          <BsFillHexagonFill className="text-5xl relative" />
+          <div className="text-white text-lg absolute top-2 left-[25px] z-100">
+            A
           </div>
         </div>
-        <div className="mx-5 my-2">
-          <ul className="flex flex-row gap-8 text-lg font-semibold text-white">
-            <li className="border-b-4 border-transparent hover:border-purple-500 cursor-pointer transition duration-150 hover:text-purple-500">
-              HOME
-            </li>
-            <li className="border-b-4 border-transparent hover:border-purple-500 cursor-pointer transition duration-150 hover:text-purple-500">
-              ABOUT
-            </li>
-            <li className="border-b-4 border-transparent hover:border-purple-500 cursor-pointer transition duration-150 hover:text-purple-500">
-              PROJECTS
-            </li>
-            <li className="border-b-4 border-transparent hover:border-purple-500 cursor-pointer transition duration-150 hover:text-purple-500">
-              CONTACT
-            </li>
-          </ul>
+        <div className="my-3 mx-3">
+          <div className="flex gap-5 font-bold">
+            <Link href="/">Home</Link>
+            <Link href="/about">About</Link>
+            <Link href="/projects">Projects</Link>
+            <Link href="/contact">Contact</Link>
+          </div>
         </div>
       </nav>
     </>

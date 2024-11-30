@@ -1,30 +1,14 @@
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { BsFillHexagonFill } from "react-icons/bs";
+
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="bg-gradient-to-t from-gray-300 h-screen ">
-      <div className="flex justify-between">
-        <div className="mx-2">
-          <BsFillHexagonFill className="text-5xl relative" />
-          <div className="text-white text-lg absolute top-3 left-[25px] z-100">
-            A
-          </div>
-        </div>
-        <div className="my-3 mx-3">
-          <ul className="flex gap-5 font-bold">
-            <li>Home</li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
-          </ul>
-        </div>
-      </div>
-      <div className="text-center  my-28 ">
+      <div className="text-center my-28 ">
         <div>
-          <div className=" bg-yellow-300 rounded-r-xl w-96 h-5 mx-auto relative">
+          <div className="bg-yellow-300 rounded-r-xl w-96 h-5 mx-auto relative">
             <div className="text-8xl">Afshal</div>
           </div>
         </div>
@@ -33,10 +17,10 @@ export default function Home() {
         <div>
           <p className="my-5 mx-6 text-lg font-semibold"> Get in touch </p>
           <p className="flex gap-6 text-2xl">
-            <FaInstagram className=" hover:cursor-pointer" />
-            <FaXTwitter className=" hover:cursor-pointer" />
-            <FaLinkedin className=" hover:cursor-pointer" />
-            <FaGithub className=" hover:cursor-pointer" />
+            <FaInstagram className="transition ease-in-out delay-150 duration-300 hover:-translate-y-1 hover:scale-110 hover:cursor-pointer" />
+            <FaXTwitter className="transition ease-in-out delay-150 duration-300 hover:-translate-y-1 hover:scale-110 hover:cursor-pointer" />
+            <FaLinkedin className="transition ease-in-out delay-150 duration-300 hover:-translate-y-1 hover:scale-110 hover:cursor-pointer" />
+            <FaGithub className="transition ease-in-out delay-150 duration-300 hover:-translate-y-1 hover:scale-110 hover:cursor-pointer" />
           </p>
         </div>
 
@@ -59,14 +43,14 @@ export default function Home() {
       </div>
       <div className="flex justify-between mx-32">
         <div className="flex gap-4">
-          <button className="bg-yellow-300 p-2 rounded-xl border-2 border-black hover:text-lg">
+          <button className="bg-yellow-300 p-2 rounded-xl border-2 border-black transition ease-in-out delay-150 duration-300 hover:-translate-y-1 hover:scale-110">
             Learn more
           </button>
-          <button className="bg-white p-2 border-2 rounded-xl border-black hover:text-lg">
+          <button className="bg-white p-2 border-2 rounded-xl border-black transition ease-in-out delay-150 duration-300 hover:-translate-y-1 hover:scale-110">
             Hire me
           </button>
         </div>
-        <button className="bg-black text-white  p-2 border-2 rounded-xl hover:text-lg">
+        <button className="bg-black text-white  p-2 border-2 rounded-xl transition ease-in-out delay-150 duration-300 hover:-translate-y-1 hover:scale-110">
           Contact Me
         </button>
       </div>

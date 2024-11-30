@@ -10,6 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        beige: "#f2ede6",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
